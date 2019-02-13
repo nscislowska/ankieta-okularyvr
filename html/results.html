@@ -1,0 +1,64 @@
+<div style="width: 100%;">
+<p class="message">Trwa ankietyzacja</p>
+
+<p>
+    Wysłanych ankiet: 
+    <span id="receivedFormCounter"></span>
+</p>
+<small>% - procent z wszystkich wysłanych ankiet</small>
+
+<div style="display: flex">
+    <div style="width:50%; color: darkred;">
+        Kobiety
+    </div>
+    <div style="width:50%; color: blue; text-align: right">
+        Mężczyźni
+    </div>
+</div>
+
+    <div class="progress" style="height: 20px;">
+            <div id="femaleCounter" class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            <div id="maleCounter" class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    
+<div class="padding">
+    Osób wiedzących, czym są okulary VR:
+    <span id="knowAboutVRCounter"></span>
+</div>
+<div class="padding">
+    Osób, które kiedykolwiek korzystały z VR:
+    <span id="everUsedVRCounter"></span>
+</div>
+<div>
+    <p>Częstotliwość korzystania z VR (u osób, które użyły przynajmniej raz)</p>
+    <div class="content-center">
+            <table id="usageFrequencyTable" class="table table-striped">
+                <thead class="bg-secondary">
+                    <tr>
+                        <th>Częstotliwość</th>
+                        <th>Ilość osób</th>
+                    </tr>
+                </thead>
+                <tbody id="usageFrequencyTableBody" class="table-info">
+                </tbody>
+            </table>
+            </div>
+</div>
+<div>
+    <p>Rozkład wieku</p>
+    <div class="content-center">
+    <table id="ageTable" class="table table-striped">
+        <thead class="bg-secondary">
+            <tr>
+                <th>Wiek</th>
+                <th>Ilość osób</th>
+            </tr>
+        </thead>
+        <tbody id="ageTableBody" class="table-info">
+        </tbody>
+    </table>
+    </div>
+</div>
+
+
+</div>

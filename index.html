@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    
+    <title>Ankieta okulary VR</title>
+
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    
+    <script src="/js/database.js"></script>
+    <script src="/js/form.js"></script>    
+    <script src="/js/main_page.js"></script>
+    <script src="/js/results.js"></script>
+    <script src="/js/validation.js"></script>
+    
+</head>
+
+<body>
+  
+    <div id="pageConatiner" class="container padding">
+            <div class="row content-center">
+       
+        <div id="header" class="row">
+          <div class="col">
+        <h2>Badanie świadomości zagrożeń związanych 
+            z używaniem okularów wirtualnej rzeczywistości</h1>
+        <div id="description" class="padding">
+                <p>
+                Poniższa ankieta ma na celu ocenę świadomości zagrożeń korzystania 
+                z okularów wirtualnej rzeczywistości względem częstotliwości 
+                ich użytkowania.
+        </p>
+        <p>
+                Po zakończeniu przeprowadzania ankietyzacji na stronie zostaną
+                 udostępnione wyniki.
+        </p>
+        </div>
+        <div hidden="false">
+        <button type="button" onClick="connectdb()">Check connection with database</button>
+        <div id="databaseConnectionResult"></div>
+        </div>
+      </div>
+        </div>
+
+        <div class="row content-center" id="box">
+        
+                <div class="row col-12 menu content-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+                    <label class="btn btn-secondary active">
+                          <input type="radio" name="menu" value="form" autocomplete="off" checked> Ankieta
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="menu" value="results" autocomplete="off"> Wyniki
+                        </label>
+                      </div>
+                </div>
+        
+        <div id="mainContent" class="col-12 row">
+        
+        </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
